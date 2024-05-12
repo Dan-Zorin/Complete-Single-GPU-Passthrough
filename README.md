@@ -245,7 +245,9 @@ virsh nodedev-detach pci_0000_01_00_0
 virsh nodedev-detach pci_0000_01_00_1
 
 # Load vfio module
-modprobe vfio-pci
+modprobe vfi
+modprobe vfio_iommu_type1
+modprobe vfio_pci
   ```
 
   </td>
